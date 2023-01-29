@@ -23,7 +23,7 @@ defmodule Cpf.Validation do
 
   def valid?(_), do: false
 
-  defp validate(cpf) when length(cpf) != 11, do: false |> IO.inspect()
+  defp validate(cpf) when length(cpf) != 11, do: false
 
   defp validate(cpf) do
     with true <- not is_sequence?(cpf),
